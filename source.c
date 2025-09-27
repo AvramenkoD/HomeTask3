@@ -1,4 +1,4 @@
-#include <stdio.h>
+п»ї#include <stdio.h>
 #include <locale.h>
 
 int main()
@@ -9,17 +9,17 @@ int main()
 	float square;
 
 	setlocale(LC_ALL, "RUS");
-	puts("Введите сторону А...");
+	puts("Р’РІРµРґРёС‚Рµ СЃС‚РѕСЂРѕРЅСѓ Рђ...");
 	scanf("%f", &aSide);
-	puts("Введите сторону В...");
+	puts("Р’РІРµРґРёС‚Рµ СЃС‚РѕСЂРѕРЅСѓ Р’...");
 	scanf("%f", &bSide);
 
 	perimetr = (aSide + bSide) * 2;
 	square = aSide * bSide;
 
-	printf("У прямоугольника со сторонами %g и %g:\n", aSide, bSide);
-	printf("Периметр равен (%0.1f + %0.1f) * 2 = %0.1f\n", aSide, bSide, perimetr);
-	printf("Площадь равна %0.1f * %0.1f = %0.1f\n", aSide, bSide, square);
+	printf("РЈ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР° СЃРѕ СЃС‚РѕСЂРѕРЅР°РјРё %g Рё %g:\n", aSide, bSide);
+	printf("РџРµСЂРёРјРµС‚СЂ СЂР°РІРµРЅ (%0.1f + %0.1f) * 2 = %0.1f\n", aSide, bSide, perimetr);
+	printf("РџР»РѕС‰Р°РґСЊ СЂР°РІРЅР° %0.1f * %0.1f = %0.1f\n", aSide, bSide, square);
 
 	return 0;
 }
