@@ -13,7 +13,11 @@ int main()
 	scanf("%f", &aSide);
 	puts("Введите сторону В...");
 	scanf("%f", &bSide);
-
+	if(aSide < 0 || bSide < 0)
+	{
+		puts("Значения сторон должны быть положительными");
+		return 0;
+	}
 	perimetr = (aSide + bSide) * 2;
 	square = aSide * bSide;
 
